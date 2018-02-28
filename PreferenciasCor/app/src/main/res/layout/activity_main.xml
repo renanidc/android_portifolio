@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutId"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="aula.com.preferenciascor.MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="26dp"
+        android:text="Escolha uma cor de fundo"
+        android:textSize="25dp" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupId"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="23dp"
+        android:background="#FFF"
+        android:paddingLeft="10dp">
+
+        <RadioButton
+            android:id="@+id/azulId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Azul" />
+
+        <RadioButton
+            android:id="@+id/laranjaId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Laranja" />
+
+        <RadioButton
+            android:id="@+id/verdeId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Verde" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnSalvarId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radioGroupId"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:text="Salvar" />
+</RelativeLayout>
